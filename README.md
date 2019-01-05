@@ -13,6 +13,7 @@ FreeBSD kernel modules can be compile using `make` (specifically bmake). A quick
 A list of ACPI objects and their ID's should hopefully be printed. Because this module doesn't do anything, it uses the default device attach methods which will result in `ENXIO` error codes being returned. Obviously this module is a bit of a hack and should never be used in anything important. Its one job is to show the user the ACPI tree and hopefully take a little mystery out of their desktop.
 
 ## Example /var/log/messages Output
+```
 Jan  5 17:39:45 modo kernel: Printing ACPI Namespace
 Jan  5 17:39:45 modo kernel: -----------------------------------------------
 Jan  5 17:39:45 modo kernel: \_SB_: _HID=none _UID=0
@@ -95,3 +96,4 @@ Jan  5 17:39:45 modo kernel: \_SB_.LNKG: _HID=PNP0C0F _UID=7
 Jan  5 17:39:45 modo kernel: \_SB_.LNKH: _HID=PNP0C0F _UID=8
 Jan  5 17:39:45 modo kernel: \_TZ_: _HID=none _UID=0
 Jan  5 17:39:45 modo kernel: -----------------------------------------------
+```
